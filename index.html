@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunny</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 40px;
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 200px; /* Ensure cards have a minimum height */
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .card h2 {
+            margin-top: 0;
+            color: #007bff;
+        }
+        .card p {
+            font-size: 1.1em;
+            margin: 10px 0;
+            font-weight: bold;
+            color: #333; /* Ensure text color is dark for contrast */
+        }
+        .price-box {
+            background-color: rgba(255, 255, 255, 0.8); /* White background with some transparency */
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block; /* Make the box fit the content */
+            margin-top: 5px; /* Add some space above the price */
+            margin-bottom: 5px; /* Add some space below the price */
+        }
+        .card .buy-button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+        .card .buy-button:hover {
+            background-color: #218838;
+        }
+
+        /* Specific backgrounds for each card (example) */
+        .card {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #fff; /* Fallback color */
+        }
+        .card.sunny-1 { background-image: url('assets/1.jpg'); }
+        .card.sunny-2 { background-image: url('assets/2.jpg'); }
+        .card.sunny-3 { background-image: url('assets/3.jpg'); }
+        .card.sunny-4 { background-image: url('assets/4.jpg'); }
+        .card.sunny-5 { background-image: url('assets/5.jpg'); }
+        .card.sunny-6 { background-image: url('assets/6.jpg'); }
+        .card.sunny-7 { background-image: url('assets/7.jpg'); }
+        .card.sunny-8 { background-image: url('assets/8.jpg'); }
+        .card.sunny-9 { background-image: url('assets/9.jpg'); }
+        .card.sunny-10 { background-image: url('assets/10.jpg'); }
+        .card.sunny-11 { background-image: url('assets/11.jpg'); }
+        .card.sunny-12 { background-image: url('assets/12.jpg'); }
+        .card.sunny-13 { background-image: url('assets/13.jpg'); }
+        .card.sunny-14 { background-image: url('assets/14.jpg'); }
+        .card.sunny-15 { background-image: url('assets/15.jpg'); }
+
+        /* Responsive adjustments */
+        @media (min-width: 768px) {
+            .card-container {
+                grid-template-columns: repeat(4, 1fr); /* 4 columns on larger screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Sunny</h1>
+    <div class="card-container">
+        <div class="card sunny-1">
+            <h2>Sunny 1</h2>
+            <div class="price-box"><p>6 USD</p></div>
+            <a href="https://www.paypal.com/ncp/payment/ZEJZ89XL4CZBC" class="buy-button" target="_blank">Buy</a>
+        </div>
+        <div class="card sunny-2">
+            <h2>Sunny 2</h2>
+            <div class="price-box"><p>6 USD</p></div>
+            <a href="https://www.paypal.com/ncp/payment/PSFQE2V4ZTEW2" class="buy-button" target="_blank">Buy</a>
+        </div>
+        <div class="card sunny-3">
+            <h2>Sunny 3</h2>
+            <div class="price-box"><p>6 USD</p></div>
+            <a href="https://www.paypal.com/ncp/payment/3CXPREP92TMUW" class="buy-button" target="_blank">Buy</a>
+        </div>
+        <div class="card sunny-4">
+            <h2>Sunny 4</h2>
+            <div class="price-box"><p>6 USD</p></div>
+            <a href="https://www.paypal.com/ncp/payment/Y3CUAXPTTP6NE" class="buy-button" target="_blank">Buy</a>
+        </div>
+        <div class="card sunny-5">
+            <h2>Sunny 5</h2>
+            <div class="price-box"><p>6 USD</p></div>
+            <a href="https://www.paypal.com/ncp/payment/EYX2THQCMMYDQ" class="buy-button" target="_blank">Buy</a>
+        </div>
+        <div class="card sunny-6">
+            <h2>Sunny 6</h2>
+            <div class="price-box"><p>8 USD</p></div>
+            <a href="https://www.paypal.com/ncp/payment/HL5ERQHAYQHNG" class="buy-button" target="_blank">Buy</a>
+        </div>
+        <div class="card sunny-7">
+            <h2>Sunny 7</h2>
+            <div class="price-box"><p>10 USD</p></div>
+            <a href="https://www.paypal.com/ncp/payment/H42GEVGREAZVS" class="buy-button" target="_blank">Buy</a>
+        </div>
+        <div class="card sunny-8">
+            <h2>Sunny 8</h2>
+            <div class="price-box"><p>6 USD</p></div>
+            <a href="https://www.paypal.com/ncp/payment/QQCCGSLHYTSBL" class="buy-button" target="_blank">Buy</a>
+        </div>
+        <div class="card sunny-9">
+            <h2>Sunny 9</h2>
+            <div class="price-box"><p>10 USD</p></div>
+            <a href="https://www.paypal.com/ncp/payment/M9N3S8DK479U6" class="buy-button" target="_blank">Buy</a>
+        </div>
+        <div class="card sunny-10">
+            <h2>Sunny 10</h2>
+            <div class="price-box"><p>8 USD</p></div>
+            <a href="https://www.paypal.com/ncp/payment/VMCXU8W79PE7G" class="buy-button" target="_blank">Buy</a>
+        </div>
+        <div class="card sunny-11">
+            <h2>Sunny 11</h2>
+            <div class="price-box"><p>15 USD</p></div>
+            <a href="https://www.paypal.com/ncp/payment/KWAV2D9S54P9U" class="buy-button" target="_blank">Buy</a>
+        </div>
+        <div class="card sunny-12">
+            <h2>Sunny 12</h2>
+            <div class="price-box"><p>6 USD</p></div>
+            <a href="https://www.paypal.com/ncp/payment/3V43B529GFX7G" class="buy-button" target="_blank">Buy</a>
+        </div>
+        <div class="card sunny-13">
+            <h2>Sunny 13</h2>
+            <div class="price-box"><p>6 USD</p></div>
+            <a href="https://www.paypal.com/ncp/payment/J8M6V4SCR2NX6" class="buy-button" target="_blank">Buy</a>
+        </div>
+        <div class="card sunny-14">
+            <h2>Sunny 14</h2>
+            <div class="price-box"><p>10 USD</p></div>
+            <a href="https://www.paypal.com/ncp/payment/9B7UE2WJRNW5J" class="buy-button" target="_blank">Buy</a>
+        </div>
+        <div class="card sunny-15">
+            <h2>Sunny 15</h2>
+            <div class="price-box"><p>15 USD</p></div>
+            <a href="https://www.paypal.com/ncp/payment/H9X9ZCKE7X7MU" class="buy-button" target="_blank">Buy</a>
+        </div>
+    </div>
+</body>
+</html>
